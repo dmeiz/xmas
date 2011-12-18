@@ -3,32 +3,59 @@
     <title>Hensgen Holiday Wishes 2011</title>
     <style>
       body {
+        color: #740000;
         font-family: Bickham Script Pro;
         font-size: 2em;
-        background-color: hsl(213, 100%, 90%);
+        background-color: #ebc5c5;
         text-align: center;
+        width: 960px;
+        margin: 0 auto;
       }
       img {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
       }
+      #left {
+        width: 250px;
+        padding: 0 10px;
+        float: left;
+        text-align: right;
+      }
+      #center {
+        float: left;
+        width: 400px;
+        padding: 0 10px;
+        background-color: #fff;
+      }
+      #right {
+        width: 250px;
+        padding: 0 10px;
+        float: left;
+        text-align: left;
+      }
     </style>
   </head>
   <body>
-    <h1>Hensgen Holiday Wishes 2011</h1>
     <div id='left'>
+      <p>We learned to ride bikes.</p>
+      <p>We got a new job.</p>
+      <p>We learned to swim.</p>
+      <p>We went on vacation</p>
     </div>
-    <p>We learned to ride bikes.</p>
-    <p>We got a new job.</p>
-    <p>We learned to swim.</p>
-    <p>We went on vacation</p>
-    <div class='col'>
+    <div id='center'>
+      <h1>Hensgen Holiday Wishes 2011</h1>
       <% (1..28).each do |i| %>
         <img border="0" alt="" src="<%= i %>.jpg"/><br><br>
       <% end %>
+      <h1>Happy New Year!</h1>
+      <h2>Love,</h2>
     </div>
-    <h1>Happy New Year!</h1>
-    <h2>Love,</h2>
+    <div id='right'>
+      <p>We learned to ride bikes.</p>
+      <p>We got a new job.</p>
+      <p>We learned to swim.</p>
+      <p>We went on vacation</p>
+    </div>
   </body>
 </html>
