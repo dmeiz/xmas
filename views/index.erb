@@ -1,20 +1,30 @@
 <html>
   <head>
     <title>Hensgen Holiday Wishes 2011</title>
+    <link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps' rel='stylesheet' type='text/css'>
     <style>
       body {
         color: #740000;
-        font-family: Bickham Script Pro;
+        font-family: 'Bilbo Swash Caps', cursive;
         font-size: 2em;
         background-color: #ebc5c5;
         text-align: center;
         width: 960px;
         margin: 0 auto;
       }
+      h1 {
+        font-size: 36px;
+        margin: 20px 0 0 0;
+      }
+      h2 {
+        font-size: 42px;
+        margin: 0px;
+      }
       img {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
+        margin: 5px 0;
       }
       #left {
         width: 250px;
@@ -34,19 +44,30 @@
         float: left;
         text-align: left;
       }
+      p {
+        font-family: Georgia, serif;
+        font-size: 16px;
+        margin-top: 500px;
+      }
+      p.first {
+        margin-top: 250px;
+      }
     </style>
   </head>
   <body>
     <div id='left'>
-      <p>We learned to ride bikes.</p>
+      <p class='first'>
+        We'd like to say we took our Christmas card online this year to save a tree, but we really just procrastinated too long.
+      </p>
       <p>We got a new job.</p>
       <p>We learned to swim.</p>
       <p>We went on vacation</p>
     </div>
     <div id='center'>
-      <h1>Hensgen Holiday Wishes 2011</h1>
+      <h1>Hensgen Holiday Wishes</h1>
+      <h2>2011</h2>
       <% (1..28).each do |i| %>
-        <img border="0" alt="" src="<%= i %>.jpg"/><br><br>
+        <img border="0" alt="" src="<%= i %>.jpg"/><br>
       <% end %>
       <h1>Happy New Year!</h1>
       <h2>Love,</h2>
