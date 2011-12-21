@@ -66,8 +66,8 @@
     <div id='center'>
       <h1>Hensgen Holiday Wishes</h1>
       <h2>2011</h2>
-      <% (1..28).each do |i| %>
-        <img border="0" alt="" src="<%= i %>.jpg"/><br>
+      <% Dir.glob('public/images/*.jpg').each do |path| %>
+        <img border="0" alt="" src="images/<%= File.basename(path) %>"/><br>
       <% end %>
       <h2>Happy New Year!</h2>
       <h1>Love,</h1>
