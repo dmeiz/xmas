@@ -71,7 +71,7 @@
     <div id='center'>
       <h1>Hensgen Holiday Wishes</h1>
       <h2>2011</h2>
-      <% Dir.glob('public/images/*.jpg').each do |path| %>
+      <% Dir.glob('public/images/*.jpg').sort.each do |path| %>
         <img border="0" alt="" src="images/<%= File.basename(path) %>"/><br>
       <% end %>
       <h2>Happy New Year!</h2>
