@@ -45,28 +45,15 @@
         text-align: left;
       }
       p {
+        text-align: left;
         font-family: Georgia, serif;
         font-size: 16px;
-        margin-top: 500px;
-      }
-      p.first {
-        margin-top: 250px;
       }
     </style>
   </head>
   <body>
     <div id='left'>
-      <p class='first'>
-        We'd like to say we took our Christmas card online this year to save a tree, but we really just procrastinated.
-        <br/><br/>
-        It had its ups and downs, but overall 2011 was a pretty great year.
-      </p>
-      <p>
-        Jenni
-      </p>
-      <p>
-        We hope you had a wonderful year and we hope to see and hear more of eachother in 2012!
-      </p>
+      &nbsp;
     </div>
     <div id='center'>
       <h1>Hensgen Holiday Wishes</h1>
@@ -74,33 +61,31 @@
       <% Dir.glob('public/images/*.jpg').sort.each do |path| %>
         <img border="0" alt="" src="images/<%= File.basename(path) %>"/><br>
       <% end %>
+      <p>
+        It had its ups and downs, but 2011 turned out pretty great.
+      </p>
+      <p>
+        Nick and Mia are doing well in the first grade, finding answers to the
+        great questions of life. They're also asking important questions like,
+        "Can I play on the phone?"
+      </p>
+      <p>
+        Dan and Jenni are doing well too, continuing to search for that perfect
+        balance between work, life and parenthood. They have found important
+        like, "No. Well, ok, but just 15 minutes. Why is the battery dead?"
+      </p>
+      <p>
+        We hope you're having a restful holiday, recharging for what is sure to
+        be an exciting 2012.
+      </p>
+      <br/>
       <h2>Happy New Year!</h2>
       <h1>Love,</h1>
       <img src='signature_nick.png' style='width:100px'/>&nbsp;&nbsp;<img src='signature_mia.png' style='width:100px'/><br/>
       <img src='signature_jenni.png' style='width:100px'/>&nbsp;&nbsp;<img src='signature_dan.png' style='width:100px'/>
     </div>
     <div id='right'>
-      <p>
-        Nick and Mia finished Kindergarden and spent the summer at Grasshopper
-        Green. The field trips were great, but they seemed more interested in
-        whether they could get something out of the vending machine.
-        <br/><br/>
-        They started first grade in the fall. They were in separate classes for
-        the first time. They like their teachers and are filling their brains
-        with useful knowledge. One modern twist is their Internet Safety class,
-        where they learned about unsavory characters like Wannaknow Wally and
-        Pottymouth Pete.
-      </p>
-      <p>
-        Dan left the RideCharge rollercoaster for <a
-        href='http://www.razoo.com'>Razoo</a> which turns out to be just
-        another rollercoaster. Still, he works with technology he likes and
-        they take good care of their employees; it's pretty hard to
-        argue with that.
-        <br/><br/>
-        Unfortunately, he hasn't been playing much music. Instead, he's focused
-        on software projects, projects too boring to mention here.
-      </p>
+      &nbsp;
     </div>
   </body>
 </html>
