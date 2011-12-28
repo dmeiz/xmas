@@ -24,5 +24,6 @@ namespace :deploy do
 
   task :finalize_update, :except => { :no_release => true } do
     run "chmod -R g+w #{latest_release}" if fetch(:group_writable, true)
+    run "ln -s #{shared_path}/images #{latest_release}/public/"
   end
 end

@@ -6,4 +6,9 @@ class Xmas < Thor
       system "convert -resize 400 #{original_image} public/images/#{File.basename(original_image)}"
     end
   end
+
+  desc 'upload_images', 'Upload images from public/images to server'
+  def upload_images
+    system('rsync -av public/images/ dev@transfer03.methodhead.com:/u/apps/xmas/shared/images/')
+  end
 end
